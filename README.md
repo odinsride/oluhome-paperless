@@ -1,16 +1,14 @@
-# oluhome-media
+# docker-paperless
 
 This repository contains the docker-compose and backup configurations to run oluhome media self-hosted services
 
 ## Services
 
-* Jellyfin (Media Server)
-* Transmission-OpenVPN (Downloader)
-* Radarr (Movies PVR)
-* Sonarr (TV PVR)
-* Jackett (Indexer)
-* Bazarr (Subtitles)
-* Diun (Docker update notifier)
+* Paperless (web front-end)
+* Redis (broker)
+* Postgres (DB)
+* Tika / Gotenberg (Office document support)
+* Diun (Docker updates)
 
 ## Dependencies
 
