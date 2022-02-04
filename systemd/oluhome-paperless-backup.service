@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup oluhome data and configurations
+
+[Service]
+Type=oneshot
+User=sitheris
+Group=users
+WorkingDirectory=/home/sitheris/docker-paperless/bin
+ExecStart=/usr/bin/env sh -c '/home/sitheris/docker-paperless/bin/oluhome-paperless-backup'

@@ -29,14 +29,14 @@ This repository contains the docker-compose and backup configurations to run olu
 4. Symlink systemd services/timers:
 
 ```
-sudo ln -s ~/docker/systemd/media-backup.service /etc/systemd/system/media-backup.service
-sudo ln -s ~/docker/systemd/media-backup.timer /etc/systemd/system/media-backup.timer
+sudo ln -s ~/docker-paperless/systemd/oluhome-paperless-backup.service /etc/systemd/system/oluhome-paperless-backup.service
+sudo ln -s ~/docker-paperless/systemd/oluhome-paperless-backup.timer /etc/systemd/system/oluhome-paperless-backup.timer
 ```
 
-5. Enable and start the media-backup systemd timer:
+5. Enable and start the oluhome-paperless-backup systemd timer:
 
 ```
-sudo systemctl enable media-backup.timer
-sudo systemctl start media-backup.timer
+sudo systemctl enable oluhome-paperless-backup.timer
+sudo systemctl start oluhome-paperless-backup.timer
 ```
 6. Start containers with `docker-compose up -d`

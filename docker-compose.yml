@@ -59,6 +59,7 @@ services:
     image: postgres:13
     container_name: paperless-db
     restart: unless-stopped
+    user: ${PUID}:${PGID}
     volumes:
       - ${APPDATA_BASE}/db_data:/var/lib/postgresql/data
     environment:
